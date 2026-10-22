@@ -1,0 +1,23 @@
+PostureSense AI (智姿 AI)
+=========================
+
+Copyright (c) 2026 PostureSense AI Project
+
+This product bundles the following third-party components at runtime.
+Their licenses are retained in the distribution as required:
+
+- MediaPipe 1.1.0              — Apache License 2.0
+- opencv-contrib-python / opencv-python 5.0.0.93 — Apache License 2.0
+- NumPy 2.3.5                  — BSD 3-Clause License
+- PySide6 / Qt 6.9.2           — LGPL v3 (Qt Company dual license)
+- pydantic 2.12.4              — MIT License
+- PyYAML 6.0.3                 — MIT License
+- matplotlib 3.10.6            — Matplotlib License (PSF-style)
+- absl-py 2.5.0                — Apache License 2.0
+- sounddevice 0.5.6            — MIT License
+- flatbuffers 25.12.19         — Apache License 2.0
+- certifi 2026.4.22            — MPL 2.0
+
+The MediaPipe pose model (pose_landmarker_lite.task) is subject to its own
+model card terms. See README.md for the full license
+inventory and verification status.

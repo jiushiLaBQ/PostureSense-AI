@@ -1,0 +1,31 @@
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Generated output (PPT previews, exports)
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets & local config
+.env
+*.local.toml
+
+# IDE / agent tooling
+.codebuddy/
+.lingma/
+.trae/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local DBs
+*.db
+*.sqlite3

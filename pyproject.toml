@@ -1,0 +1,41 @@
+[project]
+name = "posturesense"
+version = "0.1.0"
+description = "智姿 AI (PostureSense AI) — 人体工学智能感知与自适应辅助系统"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Proprietary" }
+
+# 最小运行时依赖。不复制上游 requirements.txt（双 OpenCV / 可疑包 / 缺声明）。
+# 版本下限为可解析的宽松约束；实测版本见 NOTICE。
+dependencies = [
+    "mediapipe>=1.0.0",
+    "opencv-python>=4.9.0",
+    "numpy>=1.26.0",
+    "PySide6>=6.7.0",
+    "pydantic>=2.6.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+]
+
+[project.scripts]
+posturesense = "posturesense.app:main"
+
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
